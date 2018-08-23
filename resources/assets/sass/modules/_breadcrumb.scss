@@ -1,0 +1,27 @@
+/*———————————————————————————————————*\
+    $ BREADCRUMB
+\*———————————————————————————————————*/
+.breadcrumb {
+    display: flex;
+
+    &__item {
+        list-style: none;
+        
+        &:not(:last-child):after {
+            content:      '>';
+            margin-right: 5px;
+            margin-left:  2px;
+            color:        $primary;
+        }
+    }
+
+    &__text {
+        text-decoration: underline;
+        color: black;
+        font-size: 10px;
+
+        &.active {
+            text-decoration: none;
+        }
+    }
+}

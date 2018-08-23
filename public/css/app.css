@@ -197,8 +197,11 @@
 body {
   background-image: url(images/logo.png); }
 
+* {
+  box-sizing: border-box; }
+
 .container {
-  max-width: 768px;
+  max-width: 800px;
   margin: 0 auto; }
 
 .page-container {
@@ -323,6 +326,17 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+.main-nav .nav-link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 /*———————————————————————————————————*\
     $ CENTER BLOCK
 \*———————————————————————————————————/*
@@ -348,6 +362,27 @@ a {
 /*———————————————————————————————————*\
     $ CARD
 \*———————————————————————————————————*/
+/*———————————————————————————————————*\
+    $ BREADCRUMB
+\*———————————————————————————————————*/
+.breadcrumb {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .breadcrumb__item {
+    list-style: none; }
+    .breadcrumb__item:not(:last-child):after {
+      content: '>';
+      margin-right: 5px;
+      margin-left: 2px;
+      color: #e53b00; }
+  .breadcrumb__text {
+    text-decoration: underline;
+    color: black;
+    font-size: 10px; }
+    .breadcrumb__text.active {
+      text-decoration: none; }
+
 /*———————————————————————————————————*\
     $ LAYOUTS
 \*———————————————————————————————————*/
@@ -409,18 +444,16 @@ a {
   list-style: none; }
   .main-nav .item:not(:last-child) {
     border-right: 1px solid #b22e00; }
-  .main-nav .item:first-child {
-    border-left: 1px solid #b22e00; }
 
 .main-nav .nav-link {
+  height: 50px;
   padding: 10px 20px;
+  font-size: 15px;
   color: white;
-  font-size: 16px;
-  display: inline-block;
   text-shadow: 0px 1px black; }
   .main-nav .nav-link.active, .main-nav .nav-link:focus, .main-nav .nav-link:hover {
-    background-image: linear-gradient(#fcda87, #e4a406);
     color: #e53b00;
+    background-image: linear-gradient(#fcda87, #e4a406);
     text-shadow: 0px 1px white;
     border-bottom: 1px solid #b22e00; }
 
@@ -437,34 +470,23 @@ a {
   /*———————————————————————————————————*\
     $ HOMEPAGE
 \*———————————————————————————————————*/ }
-
-.A_SUPPRIMER__SCSS-img {
-  width: 500px;
-  height: 500px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KICB2aWV3Qm94PSIwIDAgMzEuNDQ0IDMxLjQ0NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzEuNDQ0IDMxLjQ0NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KCTxwYXRoIGQ9Ik0xLjExOSwxNi44NDFjLTAuNjE5LDAtMS4xMTEtMC41MDgtMS4xMTEtMS4xMjdjMC0wLjYxOSwwLjQ5Mi0xLjExMSwxLjExMS0xLjExMWgxMy40NzVWMS4xMjcNCglDMTQuNTk1LDAuNTA4LDE1LjEwMywwLDE1LjcyMiwwYzAuNjE5LDAsMS4xMTEsMC41MDgsMS4xMTEsMS4xMjd2MTMuNDc2aDEzLjQ3NWMwLjYxOSwwLDEuMTI3LDAuNDkyLDEuMTI3LDEuMTExDQoJYzAsMC42MTktMC41MDgsMS4xMjctMS4xMjcsMS4xMjdIMTYuODMzdjEzLjQ3NmMwLDAuNjE5LTAuNDkyLDEuMTI3LTEuMTExLDEuMTI3Yy0wLjYxOSwwLTEuMTI3LTAuNTA4LTEuMTI3LTEuMTI3VjE2Ljg0MUgxLjExOXoiDQoJLz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCjwvc3ZnPg==); }
-
 @media screen and (min-width: 800px) {
   .mqpacker {
     width: initial; } }
-
 @media screen and (max-width: 768px) {
   .mqpacker {
     width: initial; }
   .mqpacker {
     width: initial; } }
-
 @media screen and (min-width: 768px) and (max-width: 768px) {
   .mqpacker {
     width: initial; } }
-
 @media screen and (max-width: 400px) {
   .mqpacker {
     width: initial; } }
-
 @media screen and (orientation: landscape) {
   .mqpacker {
     width: initial; } }
-
 @media print {
   .mqpacker {
     width: initial; } }

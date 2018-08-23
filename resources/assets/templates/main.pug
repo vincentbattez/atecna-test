@@ -2,6 +2,24 @@ include config
 block vars
 include mixins
 
+-
+  data_breadcrumb = [
+    {
+      name: "Accueil",
+      url: "#",
+      active: "false"
+    },
+    {
+      name: "Qui-sommes-nous ?",
+      url: "#",
+      active: "false"
+    },
+    {
+      name: "Présentation",
+      active: "true"
+    },
+  ];
+
 html(lang='fr')
   head
     meta(charset="UTF-8")
@@ -16,6 +34,7 @@ html(lang='fr')
     .container.page-container
       include layouts/_header
       include layouts/_navbars
+      +breadcrumb(data_breadcrumb)
 
 
       //-———————————————————————————————————*\

@@ -53,6 +53,7 @@
     $ MODULES
 \*———————————————————————————————————*/
 @import "modules/cards";
+@import "modules/breadcrumb";
 
 /*———————————————————————————————————*\
     $ LAYOUTS
@@ -67,9 +68,4 @@
 \*———————————————————————————————————*/
 .homepage { // <body class="homepage">
   @import "pages/homepage";
-}
-.A_SUPPRIMER__SCSS-img {
-  width: 500px;
-  height: 500px;
-  background-image: url($pathIMG+'icons/add-black.svg')
 }

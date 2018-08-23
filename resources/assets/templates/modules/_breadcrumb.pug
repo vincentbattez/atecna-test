@@ -1,0 +1,11 @@
+//-———————————————————————————————————*\
+    $ element : breadcrumbs
+//-———————————————————————————————————*\
+mixin breadcrumb(data_breadcrumb)
+    ul.breadcrumb
+        each link in data_breadcrumb
+            li.breadcrumb__item
+                if link.active == "true" 
+                    span(class='breadcrumb__text active') #{link.name}
+                else
+                    a(class='breadcrumb__text', href=link.url) #{link.name}
