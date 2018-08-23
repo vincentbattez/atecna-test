@@ -1,3 +1,11 @@
 /*———————————————————————————————————*\
     $ GLOBAL
 \*———————————————————————————————————*/
+body {
+  background-image: url($pathIMG+'homepage/logo.png');
+}
+
+.container {
+    max-width: $desktop;
+    margin: 0 auto;
+}

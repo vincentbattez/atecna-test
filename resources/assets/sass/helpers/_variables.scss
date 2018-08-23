@@ -1,8 +1,8 @@
 /*———————————————————————————————————*\
     $ COLORS
 \*———————————————————————————————————*/
-  $primary   : #3bcf9a !default;
-  $secondary : #0b0726 !default;
+  $primary   : #e53b00 !default;
+  $secondary : #f9bc24 !default;
 
 /*———————————————————————————————————*\
     $ FONTS
@@ -33,7 +33,7 @@
 /*———————————————————————————————————*\
     $ LISTS
 \*———————————————————————————————————*/
-  $list-medias: large-desktop desktop tablet only-tablet mobile landscape print;
+  $list-medias: desktop tablet only-tablet mobile landscape print;
   $list-color: ('primary', $primary), ('secondary', $secondary);
   
 
@@ -42,5 +42,5 @@
 \*———————————————————————————————————*/
   $mobile        : 400px; 
   $tablet        : 768px; 
-  $desktop       : 1024px; 
-  $large-desktop : 1200px;
+  $desktop       : 768px; 
+  $large-desktop : 795px;

@@ -1,26 +1,4 @@
 /*———————————————————————————————————*\
-    $ large-desktop
-\*———————————————————————————————————/*
-  Média pour les grand écrans d'ordinateurs
-
-  @use
-    @include large-desktop() {
-      // Code for large-desktop device
-    }
-     
-  @result
-    @media screen and (min-width: 1200px) {
-        // Code for large-desktop device
-    }
-*/
-@mixin large-desktop {
-  @media screen and (min-width: #{$large-desktop}) {
-    @content;
-  }
-}
-
-
-/*———————————————————————————————————*\
     $ desktop
 \*———————————————————————————————————/*
   Média pour les écrans d'ordinateurs et -
@@ -36,7 +14,7 @@
     }
 */
 @mixin desktop {
-  @media screen and (max-width: #{$large-desktop}) {
+  @media screen and (min-width: #{$large-desktop}) {
     @content;
   }
 }

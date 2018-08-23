@@ -82,6 +82,7 @@ module.exports = {
         $ HtmlWebpackPlugin (pug)
     \* - - - - - - - - - - - - - - */
     new HtmlWebpackPlugin({ filename: config.distPath+'/homepage.html', template: config.srcPath_HTML + '/homepage.pug' }),
+    new HtmlWebpackPlugin({ filename: config.distPath+'/home.html', template: config.srcPath_HTML + '/home.pug' }),
     /* - - - - - - - - - - - - *\
         $ SVGSTORE (icons)
     \* - - - - - - - - - - - - */

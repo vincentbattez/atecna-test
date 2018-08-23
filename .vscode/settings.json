@@ -10,7 +10,7 @@
     
     "webpack.prod.js": true,
     "webpack.dev.js": true,
-    ".gitignore": true,
+    // ".gitignore": true,
     // "compile.config": true,
     // "public": true,
   },

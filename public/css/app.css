@@ -18,21 +18,6 @@
     $ MEDIAS
 \*———————————————————————————————————*/
 /*———————————————————————————————————*\
-    $ large-desktop
-\*———————————————————————————————————/*
-  Média pour les grand écrans d'ordinateurs
-
-  @use
-    @include large-desktop() {
-      // Code for large-desktop device
-    }
-     
-  @result
-    @media screen and (min-width: 1200px) {
-        // Code for large-desktop device
-    }
-*/
-/*———————————————————————————————————*\
     $ desktop
 \*———————————————————————————————————/*
   Média pour les écrans d'ordinateurs et -
@@ -209,6 +194,13 @@
 /*———————————————————————————————————*\
     $ GLOBAL
 \*———————————————————————————————————*/
+body {
+  background-image: url(images/logo.png); }
+
+.container {
+  max-width: 768px;
+  margin: 0 auto; }
+
 /*———————————————————————————————————*\
     $ TYPOGRAPHY
 \*———————————————————————————————————*/
@@ -219,7 +211,7 @@ body {
   font-weight: normal; }
 
 a {
-  color: #0b0726;
+  color: #f9bc24;
   text-decoration: none; }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -256,16 +248,16 @@ a {
     $ UTILS CLASSES
 \*———————————————————————————————————*/
 .bg-primary {
-  background-color: #3bcf9a; }
+  background-color: #e53b00; }
 
 .color-primary {
-  color: #3bcf9a; }
+  color: #e53b00; }
 
 .bg-secondary {
-  background-color: #0b0726; }
+  background-color: #f9bc24; }
 
 .color-secondary {
-  color: #0b0726; }
+  color: #f9bc24; }
 
 /*———————————————————————————————————*\
     $ OVERLAY
@@ -348,6 +340,19 @@ a {
 /*———————————————————————————————————*\
     $ HEADER
 \*———————————————————————————————————*/
+.header .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header .coordonnees {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*———————————————————————————————————*\
     $ NAV
 \*———————————————————————————————————*/
@@ -370,23 +375,17 @@ a {
   height: 500px;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KICB2aWV3Qm94PSIwIDAgMzEuNDQ0IDMxLjQ0NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzEuNDQ0IDMxLjQ0NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KCTxwYXRoIGQ9Ik0xLjExOSwxNi44NDFjLTAuNjE5LDAtMS4xMTEtMC41MDgtMS4xMTEtMS4xMjdjMC0wLjYxOSwwLjQ5Mi0xLjExMSwxLjExMS0xLjExMWgxMy40NzVWMS4xMjcNCglDMTQuNTk1LDAuNTA4LDE1LjEwMywwLDE1LjcyMiwwYzAuNjE5LDAsMS4xMTEsMC41MDgsMS4xMTEsMS4xMjd2MTMuNDc2aDEzLjQ3NWMwLjYxOSwwLDEuMTI3LDAuNDkyLDEuMTI3LDEuMTExDQoJYzAsMC42MTktMC41MDgsMS4xMjctMS4xMjcsMS4xMjdIMTYuODMzdjEzLjQ3NmMwLDAuNjE5LTAuNDkyLDEuMTI3LTEuMTExLDEuMTI3Yy0wLjYxOSwwLTEuMTI3LTAuNTA4LTEuMTI3LTEuMTI3VjE2Ljg0MUgxLjExOXoiDQoJLz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCgk8Zz4NCgk8L2c+DQoJPGc+DQoJPC9nPg0KCTxnPg0KCTwvZz4NCjwvc3ZnPg==); }
 
-@media screen and (min-width: 1200px) {
-  .mqpacker {
-    width: initial; } }
-
-@media screen and (max-width: 1200px) {
-  .mqpacker {
-    width: initial; } }
-
-@media screen and (max-width: 1024px) {
-  .mqpacker {
-    width: initial; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 795px) {
   .mqpacker {
     width: initial; } }
 
 @media screen and (max-width: 768px) {
+  .mqpacker {
+    width: initial; }
+  .mqpacker {
+    width: initial; } }
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
   .mqpacker {
     width: initial; } }
 
