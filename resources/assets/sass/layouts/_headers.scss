@@ -1,3 +1,59 @@
 /*———————————————————————————————————*\
     $ HEADER
 \*———————————————————————————————————*/
+.header {
+  padding-left: 60px;
+
+  .logo img {
+    width: 150px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .coordonnees {
+    display: flex;
+    padding: 10px 20px;
+    background: white;
+
+    &__icon {
+      margin-right: 10px;
+      
+    }
+    
+    &__name {
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    &__address {
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+
+    &__phone {
+      p {
+        @extend %f-y;
+      }
+
+      .icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+      }
+    }
+
+    &--lille {
+      margin-right:  10px;
+      padding-right: 10px;
+      border-right:  1px solid $secondary;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

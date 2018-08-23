@@ -2,6 +2,38 @@
     $ Layout : header
 //-———————————————————————————————————*\
 block header
-  header.header.container(role="banner")
-    div.content
-      p je suis le header
+  header.header(role="banner")
+    .content
+      .logo
+        a(href="http://www.atecna.fr/", title="Atecna")
+          img(src=pathImg+"homepage/logo.png", alt="Logo d'Atecna")
+      .coordonnees
+        .coordonnees__icon
+          img(src=pathImg+"homepage/logo-small.png", alt="Logo d'Atecna")
+        .coordonnees--lille
+          .coordonnees__name
+            p
+              | Lille
+          .coordonnees__address
+            p
+              | 71 avenue guynemer 59700 Marcs-en-baroeul
+          .coordonnees__phone
+            p
+              a(href="tel:0320898450")
+                +icon("phone", "phone")
+                | 03 20 89 84 50
+              
+        .coordonnees__icon
+          img(src=pathImg+"homepage/logo-small.png", alt="Logo d'Atecna")
+        .coordonnees--paris
+          .coordonnees__name
+            p
+              | Paris
+          .coordonnees__address
+            p
+              | 60 rue de Londres 75008 Paris
+          .coordonnees__phone
+            p
+              a(href="tel:0666361170")
+                +icon("phone", "phone")
+                | 06 66 36 11 70

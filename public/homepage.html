@@ -8,42 +8,79 @@
     <title>Je suis le titre de la homepage</title>
   <link href="css/app.css" rel="stylesheet"></head>
   <body class="homepage">
-    <nav class="main-nav container icon-sprite-MONSITE" role="navigation">
-      <div class="content">
-        <ul class="list">
-          <li class="item" role="menuitem"><a class="nav-link active" href="./homepage.html">Accueil</a></li>
-          <li class="item" role="menuitem"><a class="nav-link" href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <header class="header container" role="banner">
-      <div class="content">
-        <p>je suis le header</p>
-      </div>
-    </header>
-    <main role="main">
-      <section class="container">
+    <div class="container page-container">
+      <header class="header" role="banner">
         <div class="content">
-          <h1>je suis dans la homepage.</h1>
-          <hr>
-          <h2>balise img html :</h2><img src="../resources/assets/images/homepage/logo.png" style="width:400px">
-          <hr>
-          <h2>div dans image en SCSS background-image</h2>
-          <div class="A_SUPPRIMER__SCSS-img"></div>
-          <hr>
-          <h2>icon html : (besoin d'un server pour voir l'icon)</h2>
-          <svg class="icon" viewBox="0 0 100 100">
-            <use xlink:href="#icon-add-black"></use>
-          </svg>
-          <hr>
+          <div class="logo"><a href="http://www.atecna.fr/" title="Atecna"><img src="../resources/assets/images/homepage/logo.png" alt="Logo d'Atecna"></a></div>
+          <div class="coordonnees">
+            <div class="coordonnees__icon"><img src="../resources/assets/images/homepage/logo-small.png" alt="Logo d'Atecna"></div>
+            <div class="coordonnees--lille">
+              <div class="coordonnees__name">
+                <p>Lille</p>
+              </div>
+              <div class="coordonnees__address">
+                <p>71 avenue guynemer 59700 Marcs-en-baroeul</p>
+              </div>
+              <div class="coordonnees__phone">
+                <p><a href="tel:0320898450">
+                    <svg class="icon" viewBox="0 0 100 100">
+                      <use xlink:href="#icon-phone"></use>
+                    </svg>03 20 89 84 50</a></p>
+              </div>
+            </div>
+            <div class="coordonnees__icon"><img src="../resources/assets/images/homepage/logo-small.png" alt="Logo d'Atecna"></div>
+            <div class="coordonnees--paris">
+              <div class="coordonnees__name">
+                <p>Paris</p>
+              </div>
+              <div class="coordonnees__address">
+                <p>60 rue de Londres 75008 Paris</p>
+              </div>
+              <div class="coordonnees__phone">
+                <p><a href="tel:0666361170">
+                    <svg class="icon" viewBox="0 0 100 100">
+                      <use xlink:href="#icon-phone"></use>
+                    </svg>06 66 36 11 70</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="main-footer container" role="contentinfo">
-      <div class="content">
-        <p>ici le footer</p>
-      </div>
-    </footer>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+      </header>
+      <nav class="main-nav" role="navigation">
+        <div class="content">
+          <ul class="list">
+            <li class="item" role="menuitem"><a class="nav-link" href="#">Qui sommes-nous ?</a></li>
+            <li class="item" role="menuitem"><a class="nav-link" href="#">Nos prestations</a></li>
+            <li class="item" role="menuitem"><a class="nav-link" href="#">Nos réalisations</a></li>
+            <li class="item" role="menuitem"><a class="nav-link" href="#">Recrutement</a></li>
+            <li class="item" role="menuitem"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main">
+        <section>
+          <div class="content">
+            <h1>je suis dans la homepage.</h1>
+            <hr>
+            <h2>balise img html :</h2><img src="../resources/assets/images/homepage/logo.png" style="width:400px">
+            <hr>
+            <h2>div dans image en SCSS background-image</h2>
+            <div class="A_SUPPRIMER__SCSS-img"></div>
+            <hr>
+            <h2>icon html : (besoin d'un server pour voir l'icon)</h2>
+            <svg class="icon" viewBox="0 0 100 100">
+              <use xlink:href="#icon-add-black"></use>
+            </svg>
+            <hr>
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer" role="contentinfo">
+        <div class="content">
+          <p>ici le footer</p>
+        </div>
+      </footer>
+      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    </div>
   <script type="text/javascript" src="js/app.js"></script></body>
 </html>

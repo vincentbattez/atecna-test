@@ -2,5 +2,38 @@
     $ NAV
 \*———————————————————————————————————*/
 .main-nav {
-  // code nav
+  .content {
+    background-image: $gradiant-primary;
+  }
+
+  .list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .item {
+    list-style: none;
+
+    &:not(:last-child){
+      border-right: 1px solid $primary--d1;
+    }
+    &:first-child {
+      border-left: 1px solid $primary--d1;
+    }
+  }
+
+  .nav-link {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    text-shadow: 0px 1px black;
+    
+    &.active, &:focus, &:hover {
+      background-image: $gradiant-secondary;
+      color: $primary;
+      text-shadow: 0px 1px white;
+      border-bottom: 1px solid $primary--d1;
+    }
+  }
 }

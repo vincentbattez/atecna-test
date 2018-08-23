@@ -3,13 +3,13 @@
 \*———————————————————————————————————*/
 body {
   font-family : $ff-body;
-  @include      font-size($fz-body);
   font-weight : normal;
+  @include      font-size($fz-body);
 }
 
 a {
-  color           : $secondary;
   text-decoration : none;
+  color           : $primary;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {

@@ -6,6 +6,13 @@ body {
 }
 
 .container {
-    max-width: $desktop;
-    margin: 0 auto;
+  max-width: $desktop;
+  margin: 0 auto;
+}
+
+.page-container {
+  background: rgba(255,255,255, .7);
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+  padding-top: 25px;
 }

@@ -4,19 +4,34 @@
 -
   data_mainNav = [
     {
-      name: "Accueil",
-      url: "./homepage.html",
-      navActive: "homepage" // doit match avec bodyClass dans les pages
+      name: "Qui sommes-nous ?",
+      url: "#",
+      navActive: "home" // doit match avec bodyClass dans les pages
+    },
+    {
+      name: "Nos prestations",
+      url: "#",
+      navActive: "prestations" // doit match avec bodyClass dans les pages
+    },
+    {
+      name: "Nos réalisations",
+      url: "#",
+      navActive: "realisations" // doit match avec bodyClass dans les pages
+    },
+    {
+      name: "Recrutement",
+      url: "#",
+      navActive: "recrutement" // doit match avec bodyClass dans les pages
     },
     {
       name: "Contact",
-      url: "./contact.html",
+      url: "#",
       navActive: "contact" // doit match avec bodyClass dans les pages
     },
   ];
 
 block main-nav
-nav.main-nav.container.icon-sprite-MONSITE(role="navigation")
+nav.main-nav(role="navigation")
   div.content
     ul.list
       each link in data_mainNav

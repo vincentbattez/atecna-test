@@ -13,20 +13,21 @@ html(lang='fr')
     block CSS
 
   body(class=bodyClass)
-    include layouts/_navbars
-    include layouts/_header
+    .container.page-container
+      include layouts/_header
+      include layouts/_navbars
 
 
-    //-———————————————————————————————————*\
-        $ PAGES
-    //-———————————————————————————————————*\
-    main(role="main")
-      block main
+      //-———————————————————————————————————*\
+          $ PAGES
+      //-———————————————————————————————————*\
+      main(role="main")
+        block main
 
 
-    include layouts/_footer   
-    //-———————————————————————————————————*\
-        $ SCRIPTS
-    //-———————————————————————————————————*\
-    script(src='../node_modules/jquery/dist/jquery.min.js')
-    block JS
+      include layouts/_footer   
+      //-———————————————————————————————————*\
+          $ SCRIPTS
+      //-———————————————————————————————————*\
+      script(src='../node_modules/jquery/dist/jquery.min.js')
+      block JS
