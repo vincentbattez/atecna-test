@@ -62,9 +62,12 @@ block main
       | Lorem ipsum dolor sit amet
     p Phasellus scelerisque urna et turpis sollicitudin egestas. Etiam pretium bibendum placerat. Etiam rhoncus diam vitae elit blandit eu dignissim justo bibendum. Cras id elit ante, non rutrum lorem. 
     form(action="#")
-      form-group
-        input(type="text" placeholder="Votre nom" required)
-        input(type="text" placeholder="Votre prénom" required)
-        input(type="email" placeholder="Votre email" required)
-      form-group
-        textarea(placeholder="Expliquez ici votre demande...")
+      .container
+        .form-group
+          input(type="text" placeholder="Votre nom" required)
+          input(type="text" placeholder="Votre prénom" required)
+          input(type="email" placeholder="Votre email" required)
+        .form-group
+          textarea(placeholder="Expliquez ici votre demande..." required)
+      .text-right 
+        input(type="submit", value="Envoyer")
