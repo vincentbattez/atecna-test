@@ -43,6 +43,10 @@ a {
   @include font-size($fz-h4);
 }
 
+.copyright {
+  color: #595846;
+}
+
 .article {
   display: flex;
   justify-content: space-between;
