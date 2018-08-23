@@ -217,6 +217,10 @@ main {
   padding-top: 25px; }
 
 /*———————————————————————————————————*\
+    $ media: mobile
+\*———————————————————————————————————*/
+
+/*———————————————————————————————————*\
     $ TYPOGRAPHY
 \*———————————————————————————————————*/
 body {
@@ -491,7 +495,10 @@ main p {
     $ HEADER
 \*———————————————————————————————————*/
 .header {
-  padding-left: 60px; }
+  padding-left: 60px;
+  /*———————————————————————————————————*\
+      $ media: mobile
+  \*———————————————————————————————————*/ }
   .header .logo img {
     width: 150px; }
   .header .content {
@@ -637,7 +644,19 @@ input[type=submit] {
   .mqpacker {
     width: initial; }
   .mqpacker {
-    width: initial; } }
+    width: initial; }
+  .container {
+    max-width: none; }
+    .header {
+      padding-left: 0; }
+      .header .content {
+        display: block; }
+      .header .logo {
+        text-align: center; }
+      .header .coordonnees {
+        padding: 10px; }
+        .header .coordonnees--lille {
+          padding-right: 5px; } }
 @media screen and (min-width: 768px) and (max-width: 768px) {
   .mqpacker {
     width: initial; } }

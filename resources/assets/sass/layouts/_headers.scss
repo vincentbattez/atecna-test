@@ -56,4 +56,26 @@
       margin: 0;
     }
   }
+
+  /*———————————————————————————————————*\
+      $ media: mobile
+  \*———————————————————————————————————*/
+  @include mobile {
+    padding-left: 0;
+
+    .content {
+      display: block;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .coordonnees {
+      padding: 10px; 
+      &--lille {
+        padding-right: 5px;
+      }
+    }
+  } // media: mobile
 }
