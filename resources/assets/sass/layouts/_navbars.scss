@@ -8,8 +8,8 @@
 
   .list {
     display: flex;
-    justify-content: flex-end;
     margin-bottom: 0;
+    justify-content: flex-end;
   }
 
   .item {
@@ -36,4 +36,42 @@
       border-bottom: 1px solid $primary--d1;
     }
   }
+
+  /*———————————————————————————————————*\
+      $ media: mobile
+  \*———————————————————————————————————*/
+  @include mobile {
+    .list {
+      display: none;
+    }
+
+    .content {
+      padding: 20px;
+    }
+    
+    .menu-burger {
+      width:      20px;
+      height:     2px;
+      display:    inline-block;
+      background: white;
+      float: right;
+      
+      &:after, &:before {
+        content:    '';
+        width:      100%;
+        height:     2px;
+        display:    inline-block;
+        position:   relative;
+        background: white;
+      }
+
+      &:after{
+        top: 3px;
+      }
+
+      &:before {
+        bottom: 5px;
+      }
+    }
+  } // media: mobile
 }

@@ -48,3 +48,28 @@ input[type=submit] {
     background-image: $gradiant-primary;
     cursor:           pointer;
 }
+
+/*———————————————————————————————————*\
+        $ media: mobile
+\*———————————————————————————————————*/
+@include mobile {
+    form {
+        .container {
+            display: block;
+        }
+    }
+    .form-group{
+        width: 100%;
+        
+        :first-child {
+            margin-right: 0;
+        }
+    }
+    textarea {
+        margin-top:    10px;
+        margin-bottom: 10px;
+    }
+    input[type=submit] {
+        width: 100%;
+    }
+} // media: mobile

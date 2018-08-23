@@ -63,3 +63,19 @@ main {
     margin: 0;
   }
 }
+
+/*———————————————————————————————————*\
+    $ media: mobile
+\*———————————————————————————————————*/
+@include mobile {
+  .article {
+    display: block;
+    margin-bottom: 20px;
+
+    .text {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+} // media: mobile
