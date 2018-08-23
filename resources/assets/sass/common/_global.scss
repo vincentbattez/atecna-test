@@ -1,12 +1,17 @@
 /*———————————————————————————————————*\
     $ GLOBAL
 \*———————————————————————————————————*/
-body {
-  background-image: url($pathIMG+'homepage/logo.png');
-}
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-image: url($pathIMG+'homepage/logo.png');
+}
+
+main {
+  padding: 0 $p-main;
+} 
 
 .container {
   max-width: $large-desktop;

@@ -14,17 +14,12 @@
     $ FONTS
 \*———————————————————————————————————*/
   $ff-body:     Trebuchet MS, sans-serif; 
-    $fz-body:   16px; 
-  $ff-title:    'Times New Roman', Times, serif;
-    $fz-h1:     35px; 
-    $fz-h2:     30px;
-    $fz-h3:     25px;
-    $fz-h4:     18px;
-    
-    $fz-h1-t:   30px; 
-    $fz-h2-t:   25px;
-    $fz-h3-t:   18px;
-    $fz-h4-t:   16px;
+    $fz-body:   12px; 
+  $ff-title:    Georgia, serif;
+    $fz-h1:     25px;
+    $fz-h2:     18px;
+    $fz-h3:     14px;
+    $fz-h4:     12px;
     
     $fz-h1-m:   25px; 
     $fz-h2-m:   18px;
@@ -35,6 +30,11 @@
     $ PATHS
 \*———————————————————————————————————*/
   $pathIMG : "../images/";
+    
+/*———————————————————————————————————*\
+    $ PADDINGS
+\*———————————————————————————————————*/
+  $p-main: 60px;
 
 /*———————————————————————————————————*\
     $ LISTS
@@ -42,7 +42,6 @@
   $list-medias: desktop tablet only-tablet mobile landscape print;
   $list-color: ('primary', $primary), ('secondary', $secondary);
   
-
 /*———————————————————————————————————*\
     $ MEDIAS
 \*———————————————————————————————————*/

@@ -12,6 +12,9 @@
     $ PATHS
 \*———————————————————————————————————*/
 /*———————————————————————————————————*\
+    $ PADDINGS
+\*———————————————————————————————————*/
+/*———————————————————————————————————*\
     $ LISTS
 \*———————————————————————————————————*/
 /*———————————————————————————————————*\
@@ -194,11 +197,14 @@
 /*———————————————————————————————————*\
     $ GLOBAL
 \*———————————————————————————————————*/
+* {
+  box-sizing: border-box; }
+
 body {
   background-image: url(images/logo.png); }
 
-* {
-  box-sizing: border-box; }
+main {
+  padding: 0 60px; }
 
 .container {
   max-width: 800px;
@@ -216,31 +222,53 @@ body {
 body {
   font-family: Trebuchet MS, sans-serif;
   font-weight: normal;
-  font-size: 16px;
-  font-size: 1rem; }
+  font-size: 12px;
+  font-size: 0.75rem; }
 
 a {
   text-decoration: none;
   color: #e53b00; }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "Times New Roman", Times, serif; }
+  font-family: Trebuchet MS, sans-serif; }
 
-.h1, h1 {
-  font-size: 35px;
-  font-size: 2.1875rem; }
-
-.h2, h2 {
-  font-size: 30px;
-  font-size: 1.875rem; }
-
-.h3, h3 {
+.h1 {
   font-size: 25px;
   font-size: 1.5625rem; }
 
-.h4, h4 {
+.h2 {
   font-size: 18px;
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  padding-left: 3px;
+  color: #e53b00;
+  border-left: 2px solid #5c5646;
+  border-bottom: 2px solid #f9bc24; }
+
+.h3 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: Georgia, serif; }
+  .h3:before {
+    content: "\2022";
+    margin-right: 5px;
+    color: #e53b00; }
+
+.h4 {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .article .text {
+    width: 50%; }
+  .article p {
+    text-indent: 20px;
+    margin: 0; }
 
 /*———————————————————————————————————*\
     $ ICONS
@@ -267,6 +295,12 @@ a {
 
 .color-secondary {
   color: #f9bc24; }
+
+.db {
+  display: block; }
+
+.text-center {
+  text-align: center; }
 
 /*———————————————————————————————————*\
     $ OVERLAY
@@ -326,7 +360,7 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
-.main-nav .nav-link {
+.carousel__dots, .carousel__dots .dot, .main-nav .nav-link {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -368,7 +402,9 @@ a {
 .breadcrumb {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 5px;
+  padding-left: 0; }
   .breadcrumb__item {
     list-style: none; }
     .breadcrumb__item:not(:last-child):after {
@@ -382,6 +418,31 @@ a {
     font-size: 10px; }
     .breadcrumb__text.active {
       text-decoration: none; }
+
+/*———————————————————————————————————*\
+    $ CAROUSEL
+\*———————————————————————————————————*/
+.carousel__dots {
+  padding-left: 0;
+  margin-bottom: 2px; }
+  .carousel__dots .dot {
+    cursor: pointer;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-image: linear-gradient(#ff7a4c, #b22e00);
+    border-radius: 50%;
+    border: 1px solid #b22e00; }
+    .carousel__dots .dot:not(:last-child) {
+      margin-right: 4px; }
+    .carousel__dots .dot a {
+      color: white;
+      font-size: 10px; }
+    .carousel__dots .dot.active, .carousel__dots .dot:hover {
+      background-image: linear-gradient(#fff, #c7c7c7); }
+      .carousel__dots .dot.active a, .carousel__dots .dot:hover a {
+        color: #e53b00; }
 
 /*———————————————————————————————————*\
     $ LAYOUTS
@@ -438,7 +499,8 @@ a {
   display: flex;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  margin-bottom: 0; }
 
 .main-nav .item {
   list-style: none; }
@@ -468,7 +530,7 @@ a {
 \*———————————————————————————————————*/
 .homepage {
   /*———————————————————————————————————*\
-    $ HOMEPAGE
+    $ HOME
 \*———————————————————————————————————*/ }
 @media screen and (min-width: 800px) {
   .mqpacker {

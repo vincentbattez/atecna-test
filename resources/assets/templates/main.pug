@@ -34,13 +34,13 @@ html(lang='fr')
     .container.page-container
       include layouts/_header
       include layouts/_navbars
-      +breadcrumb(data_breadcrumb)
 
 
       //-———————————————————————————————————*\
           $ PAGES
       //-———————————————————————————————————*\
       main(role="main")
+        +breadcrumb(data_breadcrumb)
         block main
 
 

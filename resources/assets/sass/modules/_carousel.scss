@@ -1,0 +1,58 @@
+/*———————————————————————————————————*\
+    $ CAROUSEL
+\*———————————————————————————————————*/
+.carousel {
+  
+  &__dots {
+    @extend %f-xy;
+    padding-left: 0;
+    margin-bottom: 2px;
+
+    .dot {
+      cursor: pointer;
+      @extend %f-xy;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      background-image: $gradiant-primary;
+      border-radius: 50%;
+      border: 1px solid $primary--d1;
+      
+      &:not(:last-child){
+        margin-right: 4px;
+      }
+
+      a {
+        color: white;
+        font-size: 10px;
+      }
+
+      &.active, &:hover {
+        background-image: linear-gradient(#fff, #c7c7c7);
+        a {color: $primary;}
+      }
+    }
+  }
+
+  &__container {
+
+  }
+
+  &__image {
+
+  }
+
+  &__prev {
+
+  }
+
+  &__next {
+
+  }
+
+  &__text {
+
+  }
+  
+}
