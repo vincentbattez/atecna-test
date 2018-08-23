@@ -40,19 +40,39 @@
   }
 
   &__image {
+    position: relative;
+    width: 300px;
 
+    img {
+      width: 100%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    background-color: rgba($primary, .3);
+    top: 0;
+
+    img {
+      width: 15px;
+      @extend %a-xy;
+    }
   }
 
   &__prev {
-
+    left: 0;
   }
 
   &__next {
+    right: 0;
 
+    img {
+      transform: rotate(180deg) translate(50%, 50%);
+    }
   }
-
-  &__text {
-
-  }
-  
 }

@@ -25,8 +25,7 @@ block main
           video(controls).video
             source(src="/resources/assets/video.ogv" type="video/ogv")
             | Your browser does not support the video tag.
-          span.db.text-center.color-primary Atecna au salon IT de Lille
-        
+          span.db.text-center.color-primary Atecna au salon IT de Lille 
 
       article.article
         .text
@@ -48,7 +47,24 @@ block main
             .carousel__container
               .carousel__image
                 span.carousel__prev
+                  img(src=pathImg+"/homepage/carousel-arrow.png", alt="précédent")
+
                 img(src=pathImg+"homepage/slider-img-1.jpg", alt="première image slider")
+
                 span.carousel__next
+                  img(src=pathImg+"/homepage/carousel-arrow.png", alt="suivant")
               .carousel__text
                 span.db.text-center.color-primary Atecna au salon IT de Lille
+  section
+    h1.h2
+      | Besoin de plus d’informations ?
+    h2.h3
+      | Lorem ipsum dolor sit amet
+    p Phasellus scelerisque urna et turpis sollicitudin egestas. Etiam pretium bibendum placerat. Etiam rhoncus diam vitae elit blandit eu dignissim justo bibendum. Cras id elit ante, non rutrum lorem. 
+    form(action="#")
+      form-group
+        input(type="text" placeholder="Votre nom" required)
+        input(type="text" placeholder="Votre prénom" required)
+        input(type="email" placeholder="Votre email" required)
+      form-group
+        textarea(placeholder="Expliquez ici votre demande...")

@@ -266,9 +266,10 @@ a {
           justify-content: space-between; }
   .article .text {
     width: 50%; }
-  .article p {
-    text-indent: 20px;
-    margin: 0; }
+
+main p {
+  text-indent: 20px;
+  margin: 0; }
 
 /*———————————————————————————————————*\
     $ ICONS
@@ -330,6 +331,13 @@ a {
     left:      50%;
     transform: translate(-50%, -50%);
 */
+.carousel__prev img, .carousel__next img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 /*———————————————————————————————————*\
     $ CENTER FLEX
 \*———————————————————————————————————/*
@@ -443,6 +451,32 @@ a {
       background-image: linear-gradient(#fff, #c7c7c7); }
       .carousel__dots .dot.active a, .carousel__dots .dot:hover a {
         color: #e53b00; }
+
+.carousel__image {
+  position: relative;
+  width: 300px; }
+  .carousel__image img {
+    width: 100%; }
+
+.carousel__prev, .carousel__next {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  background-color: rgba(229, 59, 0, 0.3);
+  top: 0; }
+  .carousel__prev img, .carousel__next img {
+    width: 15px; }
+
+.carousel__prev {
+  left: 0; }
+
+.carousel__next {
+  right: 0; }
+  .carousel__next img {
+    -webkit-transform: rotate(180deg) translate(50%, 50%);
+            transform: rotate(180deg) translate(50%, 50%); }
 
 /*———————————————————————————————————*\
     $ LAYOUTS
