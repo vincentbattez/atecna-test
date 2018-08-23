@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url($pathIMG+'homepage/logo.png');
+  background-image: url($pathIMG+'homepage/bg.jpg');
+  background-size: cover;
 }
 
 main {
